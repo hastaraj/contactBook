@@ -1,0 +1,32 @@
+<form #f="ngForm" (ngSubmit)="save(f)">
+  <div class="form-group">
+    <label for="fullName">Your Name:</label>
+    <input ngModel name="name" id="fullName" type="text" class="form-control">
+  </div>
+  <div class="form-group">
+    <label for="place">Your Address:</label>
+    <input ngModel name="address" id="place" type="text" class="form-control">
+  </div>
+  <div class="form-group">
+    <label for="companys">Company Name:</label>
+    <input ngModel name="company" id="companys" type="text" class="form-control">
+  </div>
+  <div class="form-group">
+    <label for="emails">Email:</label>
+    <input ngModel name="email" id="emails" type="email" class="form-control">
+  </div>
+  <div class="form-group">
+    <label for="phoneNumber">Phone:</label>
+    <input ngModel name="phone" id="phoneNumber" type="number" class="form-control">
+  </div>
+  <div class="form-group">
+    <label for="section">Your Section:</label>
+    <input ngModel name="sections" id="section" type="text" class="form-control">
+  </div>
+  <div class="form-group">
+    <label for="zip">Zip Code:</label>
+    <input ngModel name="zipcode" id="zip" type="number" class="form-control">
+  </div>
+  <button class="btn btn-primary" type="submit">Save</button>
+  <button class="btn btn-primary" type="button" (click)="resetForm(f)">Reset</button>
+</form>

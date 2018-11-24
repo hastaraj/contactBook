@@ -1,0 +1,31 @@
+<p>
+  <a routerLink="/contactadd" class="btn btn-primary">Add New Contact</a>
+  <button class="btn btn-danger">Delete Contact</button>
+  <button class="btn btn-success">Update Contact</button>
+</p>
+
+<h2>Here is your Contact List</h2>
+<table class="table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Address</th>
+      <th>Company</th>
+      <th>Email</th>
+      <th>Phone</th>
+      <th>Section</th>
+      <th>Zip Code</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let c of contactList">
+      <td>{{ c.name}}</td>
+      <td>{{ c.address}}</td>
+      <td>{{ c.company}}</td>
+      <td>{{ c.email}}</td>
+      <td>{{ c.phone}}</td>
+      <td>{{ c.section}}</td>
+      <td>{{ c.zipcode}}</td>
+    </tr>
+  </tbody>
+</table>
